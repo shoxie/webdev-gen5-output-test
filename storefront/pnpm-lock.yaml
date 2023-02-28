@@ -19,6 +19,7 @@ specifiers:
   '@types/node': 17.0.21
   '@types/react': 17.0.40
   '@types/react-instantsearch-dom': ^6.12.3
+  algoliasearch: ^4.14.3
   autoprefixer: ^10.4.2
   babel-loader: ^8.2.3
   clsx: ^1.1.1
@@ -49,6 +50,7 @@ dependencies:
   '@stripe/react-stripe-js': 1.16.5_d5m6pyixbeunloxhjzwg6ahw3e
   '@stripe/stripe-js': 1.47.0
   '@tanstack/react-query': 4.24.10_sfoxds7t5ydpegc3knd667wn6m
+  algoliasearch: 4.14.3
   clsx: 1.2.1
   lodash: 4.17.21
   medusa-react: 4.0.4_fefo6ba46c6u7eedllvvnbnj44
@@ -57,7 +59,7 @@ dependencies:
   react-country-flag: 3.0.2_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-hook-form: 7.43.2_react@17.0.2
-  react-instantsearch-hooks-web: 6.40.1_sfoxds7t5ydpegc3knd667wn6m
+  react-instantsearch-hooks-web: 6.40.1_xj5zdaatmp5rhgb3mn24l3ipwu
   react-intersection-observer: 9.4.3_react@17.0.2
   sharp: 0.30.7
 
@@ -82,17 +84,14 @@ packages:
     resolution: {integrity: sha512-hWH1yCxgG3+R/xZIscmUrWAIBnmBFHH5j30fY/+aPkEZWt90wYILfAHIOZ1/Wxhho5SkPfwFmT7ooX2d9JeQBw==}
     dependencies:
       '@algolia/cache-common': 4.14.3
-    dev: true
 
   /@algolia/cache-common/4.14.3:
     resolution: {integrity: sha512-oZJofOoD9FQOwiGTzyRnmzvh3ZP8WVTNPBLH5xU5JNF7drDbRT0ocVT0h/xB2rPHYzOeXRrLaQQBwRT/CKom0Q==}
-    dev: true
 
   /@algolia/cache-in-memory/4.14.3:
     resolution: {integrity: sha512-ES0hHQnzWjeioLQf5Nq+x1AWdZJ50znNPSH3puB/Y4Xsg4Av1bvLmTJe7SY2uqONaeMTvL0OaVcoVtQgJVw0vg==}
     dependencies:
       '@algolia/cache-common': 4.14.3
-    dev: true
 
   /@algolia/client-account/4.14.3:
     resolution: {integrity: sha512-PBcPb0+f5Xbh5UfLZNx2Ow589OdP8WYjB4CnvupfYBrl9JyC1sdH4jcq/ri8osO/mCZYjZrQsKAPIqW/gQmizQ==}
@@ -100,7 +99,6 @@ packages:
       '@algolia/client-common': 4.14.3
       '@algolia/client-search': 4.14.3
       '@algolia/transporter': 4.14.3
-    dev: true
 
   /@algolia/client-analytics/4.14.3:
     resolution: {integrity: sha512-eAwQq0Hb/aauv9NhCH5Dp3Nm29oFx28sayFN2fdOWemwSeJHIl7TmcsxVlRsO50fsD8CtPcDhtGeD3AIFLNvqw==}
@@ -109,14 +107,12 @@ packages:
       '@algolia/client-search': 4.14.3
       '@algolia/requester-common': 4.14.3
       '@algolia/transporter': 4.14.3
-    dev: true
 
   /@algolia/client-common/4.14.3:
     resolution: {integrity: sha512-jkPPDZdi63IK64Yg4WccdCsAP4pHxSkr4usplkUZM5C1l1oEpZXsy2c579LQ0rvwCs5JFmwfNG4ahOszidfWPw==}
     dependencies:
       '@algolia/requester-common': 4.14.3
       '@algolia/transporter': 4.14.3
-    dev: true
 
   /@algolia/client-personalization/4.14.3:
     resolution: {integrity: sha512-UCX1MtkVNgaOL9f0e22x6tC9e2H3unZQlSUdnVaSKpZ+hdSChXGaRjp2UIT7pxmPqNCyv51F597KEX5WT60jNg==}
@@ -124,7 +120,6 @@ packages:
       '@algolia/client-common': 4.14.3
       '@algolia/requester-common': 4.14.3
       '@algolia/transporter': 4.14.3
-    dev: true
 
   /@algolia/client-search/4.14.3:
     resolution: {integrity: sha512-I2U7xBx5OPFdPLA8AXKUPPxGY3HDxZ4r7+mlZ8ZpLbI8/ri6fnu6B4z3wcL7sgHhDYMwnAE8Xr0AB0h3Hnkp4A==}
@@ -132,36 +127,30 @@ packages:
       '@algolia/client-common': 4.14.3
       '@algolia/requester-common': 4.14.3
       '@algolia/transporter': 4.14.3
-    dev: true
 
   /@algolia/events/4.0.1:
     resolution: {integrity: sha512-FQzvOCgoFXAbf5Y6mYozw2aj5KCJoA3m4heImceldzPSMbdyS4atVjJzXKMsfX3wnZTFYwkkt8/z8UesLHlSBQ==}
 
   /@algolia/logger-common/4.14.3:
     resolution: {integrity: sha512-kUEAZaBt/J3RjYi8MEBT2QEexJR2kAE2mtLmezsmqMQZTV502TkHCxYzTwY2dE7OKcUTxi4OFlMuS4GId9CWPw==}
-    dev: true
 
   /@algolia/logger-console/4.14.3:
     resolution: {integrity: sha512-ZWqAlUITktiMN2EiFpQIFCJS10N96A++yrexqC2Z+3hgF/JcKrOxOdT4nSCQoEPvU4Ki9QKbpzbebRDemZt/hw==}
     dependencies:
       '@algolia/logger-common': 4.14.3
-    dev: true
 
   /@algolia/requester-browser-xhr/4.14.3:
     resolution: {integrity: sha512-AZeg2T08WLUPvDncl2XLX2O67W5wIO8MNaT7z5ii5LgBTuk/rU4CikTjCe2xsUleIZeFl++QrPAi4Bdxws6r/Q==}
     dependencies:
       '@algolia/requester-common': 4.14.3
-    dev: true
 
   /@algolia/requester-common/4.14.3:
     resolution: {integrity: sha512-RrRzqNyKFDP7IkTuV3XvYGF9cDPn9h6qEDl595lXva3YUk9YSS8+MGZnnkOMHvjkrSCKfoLeLbm/T4tmoIeclw==}
-    dev: true
 
   /@algolia/requester-node-http/4.14.3:
     resolution: {integrity: sha512-O5wnPxtDRPuW2U0EaOz9rMMWdlhwP0J0eSL1Z7TtXF8xnUeeUyNJrdhV5uy2CAp6RbhM1VuC3sOJcIR6Av+vbA==}
     dependencies:
       '@algolia/requester-common': 4.14.3
-    dev: true
 
   /@algolia/transporter/4.14.3:
     resolution: {integrity: sha512-2qlKlKsnGJ008exFRb5RTeTOqhLZj0bkMCMVskxoqWejs2Q2QtWmsiH98hDfpw0fmnyhzHEt0Z7lqxBYp8bW2w==}
@@ -169,7 +158,6 @@ packages:
       '@algolia/cache-common': 4.14.3
       '@algolia/logger-common': 4.14.3
       '@algolia/requester-common': 4.14.3
-    dev: true
 
   /@algolia/ui-components-highlight-vdom/1.2.1:
     resolution: {integrity: sha512-IlYgIaCUEkz9ezNbwugwKv991oOHhveyq6nzL0F1jDzg1p3q5Yj/vO4KpNG910r2dwGCG3nEm5GtChcLnarhFA==}
@@ -1361,14 +1349,6 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /algoliasearch-helper/3.11.3:
-    resolution: {integrity: sha512-TbaEvLwiuGygHQIB8y+OsJKQQ40+JKUua5B91X66tMUHyyhbNHvqyr0lqd3wCoyKx7WybyQrC0WJvzoIeh24Aw==}
-    peerDependencies:
-      algoliasearch: '>= 3.1 < 6'
-    dependencies:
-      '@algolia/events': 4.0.1
-    dev: false
-
   /algoliasearch-helper/3.11.3_algoliasearch@4.14.3:
     resolution: {integrity: sha512-TbaEvLwiuGygHQIB8y+OsJKQQ40+JKUua5B91X66tMUHyyhbNHvqyr0lqd3wCoyKx7WybyQrC0WJvzoIeh24Aw==}
     peerDependencies:
@@ -1376,7 +1356,6 @@ packages:
     dependencies:
       '@algolia/events': 4.0.1
       algoliasearch: 4.14.3
-    dev: true
 
   /algoliasearch/4.14.3:
     resolution: {integrity: sha512-GZTEuxzfWbP/vr7ZJfGzIl8fOsoxN916Z6FY2Egc9q2TmZ6hvq5KfAxY89pPW01oW/2HDEKA8d30f9iAH9eXYg==}
@@ -1395,7 +1374,6 @@ packages:
       '@algolia/requester-common': 4.14.3
       '@algolia/requester-node-http': 4.14.3
       '@algolia/transporter': 4.14.3
-    dev: true
 
   /ansi-align/3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
@@ -3727,7 +3705,7 @@ packages:
       through: 2.3.8
       wrap-ansi: 7.0.0
 
-  /instantsearch.js/4.51.1:
+  /instantsearch.js/4.51.1_algoliasearch@4.14.3:
     resolution: {integrity: sha512-l4nETzassgSMBqOhNxntNH2MGG0KvFagwVwnXFis9P06nlspAyOdFLCQ0HA5wnlRDDev2WAZg9xRcTPCTLrwZw==}
     peerDependencies:
       algoliasearch: '>= 3.1 < 6'
@@ -3739,7 +3717,8 @@ packages:
       '@types/google.maps': 3.52.0
       '@types/hogan.js': 3.0.1
       '@types/qs': 6.9.7
-      algoliasearch-helper: 3.11.3
+      algoliasearch: 4.14.3
+      algoliasearch-helper: 3.11.3_algoliasearch@4.14.3
       hogan.js: 3.0.2
       htm: 3.1.1
       preact: 10.13.0
@@ -5516,7 +5495,7 @@ packages:
       react: 17.0.2
     dev: false
 
-  /react-instantsearch-hooks-web/6.40.1_sfoxds7t5ydpegc3knd667wn6m:
+  /react-instantsearch-hooks-web/6.40.1_xj5zdaatmp5rhgb3mn24l3ipwu:
     resolution: {integrity: sha512-MbsS1nhyZWPJjSVRzkDVmb0TM4L2kjHANsr0e1NDwkVWicP8LtXdX6UINDnekMKVnk1OmoF10NAJt4LmcSOqaA==}
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
@@ -5524,21 +5503,23 @@ packages:
       react-dom: '>= 16.8.0 < 19'
     dependencies:
       '@babel/runtime': 7.21.0
-      instantsearch.js: 4.51.1
+      algoliasearch: 4.14.3
+      instantsearch.js: 4.51.1_algoliasearch@4.14.3
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      react-instantsearch-hooks: 6.40.1_react@17.0.2
+      react-instantsearch-hooks: 6.40.1_ttlo6uakaykldbar5avu6myinq
     dev: false
 
-  /react-instantsearch-hooks/6.40.1_react@17.0.2:
+  /react-instantsearch-hooks/6.40.1_ttlo6uakaykldbar5avu6myinq:
     resolution: {integrity: sha512-Nqbmencg5816UVDkWUFpGyurAhp8WUBQgHiYj/bTnYQ7KuwXbbxIppIwexZqzXG8Q3DKVBWZw4PnmJiStLK2CA==}
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.8.0 < 19'
     dependencies:
       '@babel/runtime': 7.21.0
-      algoliasearch-helper: 3.11.3
-      instantsearch.js: 4.51.1
+      algoliasearch: 4.14.3
+      algoliasearch-helper: 3.11.3_algoliasearch@4.14.3
+      instantsearch.js: 4.51.1_algoliasearch@4.14.3
       react: 17.0.2
       use-sync-external-store: 1.2.0_react@17.0.2
     dev: false

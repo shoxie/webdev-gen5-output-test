@@ -31,7 +31,7 @@ const FooterNav = () => {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col gap-y-2">
+          {/* <div className="flex flex-col gap-y-2">
             <span className="text-base-semi">Medusa</span>
             <ul className="grid grid-cols-1 gap-y-2">
               <li>
@@ -62,13 +62,13 @@ const FooterNav = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col-reverse gap-y-4 justify-center xsmall:items-center xsmall:flex-row xsmall:items-end xsmall:justify-between">
-        <span className="text-xsmall-regular text-gray-500">
-          © Copyright 2022 ACME
-        </span>
+        {/* <span className="text-xsmall-regular text-gray-500">
+          © Copyright 2022 WRDE
+        </span> */}
         <div className="min-w-[316px] flex xsmall:justify-end">
           <CountrySelect />
         </div>
