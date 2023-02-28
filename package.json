@@ -1,0 +1,25 @@
+{
+	"name": "start-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start:linux": "run-s tab:server tab:admin tab:storefront open:page",
+		"start:wsl": "concurrently -c \"auto\" \"npm run server\" \"npm run admin\" \"npm run storefront\"",
+		"backend": "echo 'Backend started...'",
+		"tab:server": "ttab -t 'Backend' && cd ./server/ && npm run start",
+		"tab:admin": "ttab -t 'Admin' && cd ./admin/ && npm run start",
+		"tab:storefront": "ttab -t 'Storefront' && cd ./storefront/ && npm run dev",
+		"server": "cd ./server/ && npm run start",
+		"storefront": "cd ./storefront/ && npm run dev",
+		"admin": "cd ./admin/ && npm run start",
+		"open:page": "open 'http://localhost:3000'"
+	},
+	"devDependencies": {
+		"npm-run-all": "^4.1.5",
+		"ttab": "^0.8.0"
+	},
+	"dependencies": {
+		"concurrently": "^7.6.0"
+	}
+}
